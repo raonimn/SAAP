@@ -1,8 +1,8 @@
 *.~*
 *.dcu
-*.exe
-exe
 dcu
-Release
 .local
+Debug
+conf.ini
+dados
 .identcache
