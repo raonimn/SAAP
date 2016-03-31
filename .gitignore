@@ -8,3 +8,4 @@ conf.ini
 dados
 .identcache
 *.exe
+Win32/Release/SAAP_WSDL.exe
