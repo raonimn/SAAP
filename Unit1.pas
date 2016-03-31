@@ -1556,15 +1556,15 @@ procedure TForm1.enviamail(unidade, unidade_mail: string);
 // Procedure para enviar o email
 var
   Y: Integer;
-  caminho: string;
+  caminho, passuser: string;
 begin
   if ((unidade <> '') and (unidade_mail <> '') and (FileExists(caminho + 'relatorios\' + unidade + '.xlsx'))) then
   begin
     caminho := ExtractFilePath(ParamStr(0));
-
+    passuser := 'Pp123456';
     try
       idsmtp1.Username := 'correiosnet\peextraviozero';
-      idsmtp1.Password := 'Pp123456';
+      idsmtp1.Password := passuser;
       if not idsmtp1.Connected then
       try
         idsmtp1.Connect;
