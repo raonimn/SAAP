@@ -1477,6 +1477,7 @@ begin
   begin
     escreveLog('Sem configurações pré-definidas.');
     ShowMessage('É necessário configurar o sistema!');
+    conf_DMenos := 1;
     if not assigned(Form2) then
       Application.CreateForm(TForm2, Form2);
     Form2.ShowModal;
