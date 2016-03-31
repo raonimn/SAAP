@@ -1,0 +1,1141 @@
+object Form2: TForm2
+  Left = 362
+  Top = 149
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 
+    'Configura'#231#245'es - Sistema de Acompanhamento e Alerta de Pend'#234'ncias' +
+    ' - SAAP'
+  ClientHeight = 467
+  ClientWidth = 726
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  Left = 362
+  Top = 149
+  DesignerMasterStyle = 0
+  object tbc1: TTabControl
+    Align = Client
+    Size.Width = 726.000000000000000000
+    Size.Height = 467.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    object tbtm1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Font.Family = 'Bookman Old Style'
+      TextSettings.Font.Size = 14.000000000000000000
+      StyledSettings = [Style, FontColor]
+      IsSelected = True
+      Size.Width = 58.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Geral'
+      ExplicitSize.cx = 47.000000000000000000
+      ExplicitSize.cy = 24.000000000000000000
+      object img5: TImage
+        MultiResBitmap.Height = 200
+        MultiResBitmap.Width = 200
+        MultiResBitmap = <
+          item
+            Width = 200
+            Height = 200
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000C8000000C80806000000AD58AE
+              9E000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              074749444154785EEDDD69CC546719C6F1B90E1597A871894BD4B8444DD41863
+              341AA3C6256A5CA2C6252E31C6256ADC91A28D158CD4DA6A3184084AAB94F665
+              2D5078918220657BD937D95AF6A550F6B294B55473669EE7F81CB83F38F71C93
+              F3FDFC7FE4E47F4D325F9F9C9977264C0BC0FFA7A228641B80531E9041B60138
+              E501B9C93600A73C20CFB00DC0518CF199B60138E51DE459B60138E51DE4D9B6
+              0138E51DE439B60138E50179AE6D004EF912EB79B60138E50179BE6D008E2E16
+              C50B6C037074A9285E681B80A34B31BEC8360047972FC717DB06E0E8CA95F812
+              DB001C5DBD1A5F6A1B80531E9097D906E0E8A9A78A97DB06E0E8DCB5F80ADB00
+              1C9DBF165F691B80531E9057D906E0E8C2D3C5AB6D0370D20189AFB10DC0D1C5
+              8BC56B6D0370D20189AFB30DC0D1994BF1F5B60138E50179836D008ECE5E8E6F
+              B40DC0C9F27489525A599DBB52BC293D680D4E17A5B4BB3A753EBEB9F6B3296D
+              5875EA4A7C4BDD2753DAB4EAF493F1AD6902A850BE11513B5D94D28A1EBF10DF
+              66870580A313178BB7DB06E064AD76F9239EE9A294F65427CFC677A4D75AADF2
+              77D828A5DDD5D173C53B530154D0B173F15DB601387AEC7C7CB76D00CEF5CF41
+              D4BEF1775F4AA9EB9127E27BECB0007074F04C7CAF6D008E0E9D89EFB30DC0D1
+              63678AF7DB06E068FFA9F801DB001C1D38153F681B80A383A78B0FD906E0A403
+              123F6C1B80A37D27E2476C0370B4FF44F151DB001CED39193F661B80A3BD27E3
+              C75B21AD41E9A2947655BB8EC54FA409A082761F8F9FB40DC0290FC8A76C0370
+              B4F344FC74AB93D64DE9A29476553B8FC6CFA409A082761D8D9FB50DC0D1A3C7
+              8ACFD906E068FB91F879DB001CED3812BF601B80A31D8FC72FDA06E068FBE1E2
+              4BB60138DA72387ED93600475B0FC7AFD806E068EB91F855DB001CFDEB50FC9A
+              6D004E26B514D34529ADE8E603F1EB76580038DA78307EC33600479B0EC56FDA
+              06E068D3FEE25B318D2C5D94D2EE6AC381F8ED540015B4FE40FC8E6D008ED6EF
+              8BDFB50DC0D1DAFDF17BB601385AB3377EBFE6FFA14569E3AAB57BE30F520154
+              D0EA7DF187B601385ABD27FEC8360047ABF6C49FD806E0686057FCA96D008E56
+              EE8E436C037034B0270EB50DC0D1F25DF1E6BA5FDCA2B469D58A5D71582A800A
+              598C2DA58A52DA5B2DDF196FA97BBBA1B4712DD24949474594D2DE9607A5F6ED
+              86D2A6554B7714B7D6BFDF50DAAC6AC92371789A002A68F1F638A2CE49A2B489
+              CDD2BB901B6F4828A5BD5DB42DFEA6CE49A2B489CDD23FA507A294F6560BB716
+              B7A507B54F14A54DAA166E0FBFADFB644A9BD62C8634D30D8552DA5B2DD816EE
+              A87392286D62357F6BB8334D001532A5AB48B7134A6945E76D2EEECAD2ED24A6
+              DB09A5B4BB9AB7258CAAF35A8CD226362B8AD6F51F2CA494F636BDC40AA36B1C
+              244A9BD9905E66A53724A294F65673378531E9A000A8A0FE8DE14FAD74545A45
+              F98852FABFD59C8D616C9A002A68F6C630CE360047B337843FDB06E068D6FA30
+              DE36004733D785BB6D037034635DB8C7360027CB8A965AE9A294F6B6BC834CB0
+              C302C029BF72527E2CC2C5C55571E981B561621A002AE88135E1FE5ADF6AA4B4
+              89ADFBAD464A9B584D5B5D4C4A070540054D5D1526A793D2AAF9E5464A1B554D
+              5919A6A602A8A0C903619A6D008EA6AC0AD36BBD9BA7B481D5A49561462A800A
+              EA1B08336D037074FF4098651B80A3BE15C583755E8B51DAC4EABE65614E2A80
+              0A9AB822F4DB06E0E8DEE5616EAD8F14296D6075EFB2302F4D001534616978C8
+              3600477F5B1AE6DB06E05CFF7D90C27E0F8152DA5DFD75695868870580A37B96
+              8445B60138BAFBE1F04FDB001C8D5F1C16DB06E068FCC361896D008EFEB2382C
+              ADF38922A54DACC62D0ECBD2045041E3168515350E12A58DACC62E0C03A9002A
+              64B1C8A42C13A5B4B71ABBA8B3CA0E0B004763FED159631B8093296B4945BA28
+              A5BD1D33BFB3AE35281D95902E4A695735664167439A002A68F4FCCEC63A7F0F
+              A6B489CD8AF45A2BA6D75A94D2DE6AF482CEE674500054D0A8878A2DB60138FA
+              E3DF3B5B6D0370346A7E675BED772C9436ACBA6B5E6747CDE752DAB8EA0F733B
+              8FA402A8A03BE7751EB50DC0C9B27448CAEF9C504A7BABDFF7B777DB6101E05C
+              FF24BD88373E39A4947657B7CF6DEFB5C302C0D11DFDED7D75FFE44569E3FABB
+              FEF681540015747B7FFB60BDA34469F3AA91B3DB87D204504123E7B40FD73949
+              9436B1BAEDC1F691BA4FA6B469D5C899F9E36902A8A011D3F3A3B601381A3E33
+              3F6E1B80A35F4FCF4FD47829466923ABE1B3F293A9002A68F8B4FCB46D008E46
+              CCCC9FA87BBBA1B471FDD58CFC4C2A800A1A3E353F6B1B80A39F4FCFCF0F4EF7
+              933CDD4F28A5DDD5AD53F227EDB00070346C527E4183D31B923C3DA0947655BF
+              9C5C5C4ABB95768B52DA5DDD322DBF9C5E6AD5FB9317A50DAB864ECBAFD47E36
+              A50DAB7ED1975F4D1340050D9B9A5FAB7392286D6235ECBEFC69A50745F98052
+              DA55FD6C4AFEEF74560054D0CD93F3FFA48352E76E4369E35A1E90BCEEED86D2
+              C6F5C77D793B1D140015347462DEA97592286D62874CC863AD17639436B01AD2
+              579E1300BD5AADFF0225EA51F51F840F400000000049454E44AE426082}
+            FileName = 'D:\Raoni\Delphi\Master_rastro_SqlServer\dasxjgmy.png'
+          end>
+        Align = Contents
+        Opacity = 0.899999976158142100
+        Size.Width = 726.000000000000000000
+        Size.Height = 440.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+      end
+      object grp1: TGroupBox
+        Position.X = 8.000000000000000000
+        Position.Y = 254.000000000000000000
+        Size.Width = 189.000000000000000000
+        Size.Height = 89.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Unidades monitoradas'
+        TabOrder = 5
+        object lbl1: TLabel
+          Align = Top
+          Margins.Top = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 189.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Selecione a DR'
+        end
+        object cbb1: TComboBox
+          Align = Top
+          Items.Strings = (
+            'ACR'
+            'AL'
+            'AM'
+            'AP'
+            'BA'
+            'BSB'
+            'CE'
+            'ES'
+            'GO'
+            'MA'
+            'MG'
+            'MS'
+            'MT'
+            'PA'
+            'PB'
+            'PE'
+            'PI'
+            'PR'
+            'RJ'
+            'RN'
+            'RO'
+            'RR'
+            'RS'
+            'SC'
+            'SE'
+            'SPI'
+            'SPM'
+            'TO')
+          ItemIndex = 0
+          Margins.Left = 50.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 50.000000000000000000
+          Position.X = 50.000000000000000000
+          Position.Y = 42.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnChange = cbb1Change
+          OnMouseEnter = cbb1MouseEnter
+          OnMouseLeave = lv2MouseLeave
+        end
+        object lbl8: TLabel
+          Align = Bottom
+          StyledSettings = [Family, Size, FontColor]
+          Margins.Bottom = 5.000000000000000000
+          Position.Y = 67.000000000000000000
+          Size.Width = 189.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.HorzAlign = Center
+          Text = 'Quantidade de unidades:'
+        end
+      end
+      object grp11: TGroupBox
+        Position.X = 200.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 249.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Relat'#243'rios'
+        TabOrder = 7
+        object grp9: TGroupBox
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 83.000000000000000000
+          Size.Width = 319.000000000000000000
+          Size.Height = 102.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'HTML'
+          TabOrder = 1
+          object chkhtml: TCheckBox
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 15.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 15.000000000000000000
+            Size.Width = 309.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Gerar relat'#243'rios em HTML (Intranet) ?'
+            TextSettings.HorzAlign = Center
+          end
+          object edt6: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 1
+            TextSettings.HorzAlign = Center
+            Position.X = 5.000000000000000000
+            Position.Y = 59.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 309.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            OnMouseEnter = edt6MouseEnter
+            OnMouseLeave = edt6MouseLeave
+          end
+          object lbl9: TLabel
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 3.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 37.000000000000000000
+            Size.Width = 309.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'Caminho para envio do arquivo:'
+          end
+        end
+        object grp10: TGroupBox
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 319.000000000000000000
+          Size.Height = 53.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Excel'
+          TabOrder = 0
+          object chkxls: TCheckBox
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 15.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 15.000000000000000000
+            Size.Width = 309.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Gerar relat'#243'rios em XLSX (Excel) ?'
+            TextSettings.HorzAlign = Center
+            OnChange = chkxlsChange
+          end
+        end
+        object grp14: TGroupBox
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 195.000000000000000000
+          Size.Width = 319.000000000000000000
+          Size.Height = 46.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'E-mail'
+          TabOrder = 2
+          object chkmail: TCheckBox
+            Align = Top
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 15.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 15.000000000000000000
+            Size.Width = 309.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Enviar os relat'#243'rios em XLSX por E-mail?'
+            TextSettings.HorzAlign = Center
+          end
+        end
+      end
+      object grp12: TGroupBox
+        Margins.Top = 20.000000000000000000
+        Position.X = 4.000000000000000000
+        Size.Width = 193.000000000000000000
+        Size.Height = 249.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Sistema'
+        TabOrder = 0
+        object lbl2: TLabel
+          Align = Bottom
+          Margins.Bottom = -5.000000000000000000
+          Position.Y = 148.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'In'#237'cio do processamento:'
+        end
+        object tmdt1: TTimeEdit
+          Time = 0.958333333333333400
+          Align = Bottom
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 170.000000000000000000
+          Size.Width = 173.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, FontColor]
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.HorzAlign = Center
+          TabOrder = 1
+          OnMouseEnter = tmdt1MouseEnter
+          OnMouseLeave = lv2MouseLeave
+        end
+        object lbl10: TLabel
+          Align = Bottom
+          Margins.Bottom = 5.000000000000000000
+          Position.Y = 202.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Acesso via internet?'
+        end
+        object lbl11: TLabel
+          Align = Top
+          Margins.Top = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Endere'#231'o do banco de dados:'
+        end
+        object edt7: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          TextSettings.HorzAlign = Center
+          Position.X = 10.000000000000000000
+          Position.Y = 42.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 173.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          OnExit = edt7Exit
+          OnMouseEnter = edt7MouseEnter
+          OnMouseLeave = lv2MouseLeave
+        end
+        object sld1: TTMSFMXSlider
+          Align = Bottom
+          DisableFocusEffect = False
+          Enabled = False
+          Margins.Left = 60.000000000000000000
+          Margins.Right = 60.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 60.000000000000000000
+          Position.Y = 224.000000000000000000
+          TabOrder = 2
+          Size.Width = 73.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          OnMouseEnter = sld1MouseEnter
+          OnMouseLeave = lv2MouseLeave
+          OnStateChanged = sld1StateChanged
+        end
+        object spnbx1: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Bottom
+          TabOrder = 3
+          Cursor = crIBeam
+          DecimalDigits = 0
+          Max = 31.000000000000000000
+          Value = 1.000000000000000000
+          Position.X = 60.000000000000000000
+          Position.Y = 111.000000000000000000
+          TextSettings.Font.Family = 'Lucida Sans Unicode'
+          TextSettings.Font.Size = 16.000000000000000000
+          Margins.Left = 60.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 60.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [FontColor]
+        end
+        object lbl17: TLabel
+          Align = Bottom
+          Position.Y = 84.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Buscar dados em D - :'
+        end
+      end
+    end
+    object tbtm2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Font.Family = 'Bookman Old Style'
+      TextSettings.Font.Size = 14.000000000000000000
+      StyledSettings = [Style, FontColor]
+      IsSelected = False
+      ImageIndex = 0
+      Size.Width = 125.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Fonte de dados'
+      ExplicitSize.cx = 102.000000000000000000
+      ExplicitSize.cy = 24.000000000000000000
+      object img6: TImage
+        MultiResBitmap.Height = 200
+        MultiResBitmap.Width = 200
+        MultiResBitmap = <
+          item
+            Width = 200
+            Height = 200
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000C8000000C80806000000AD58AE
+              9E000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              074749444154785EEDDD69CC546719C6F1B90E1597A871894BD4B8444DD41863
+              341AA3C6256A5CA2C6252E31C6256ADC91A28D158CD4DA6A3184084AAB94F665
+              2D5078918220657BD937D95AF6A550F6B294B55473669EE7F81CB83F38F71C93
+              F3FDFC7FE4E47F4D325F9F9C9977264C0BC0FFA7A228641B80531E9041B60138
+              E501B9C93600A73C20CFB00DC0518CF199B60138E51DE459B60138E51DE4D9B6
+              0138E51DE439B60138E50179AE6D004EF912EB79B60138E50179BE6D008E2E16
+              C50B6C037074A9285E681B80A34B31BEC8360047972FC717DB06E0E8CA95F812
+              DB001C5DBD1A5F6A1B80531E9097D906E0E8A9A78A97DB06E0E8DCB5F80ADB00
+              1C9DBF165F691B80531E9057D906E0E8C2D3C5AB6D0370D20189AFB10DC0D1C5
+              8BC56B6D0370D20189AFB30DC0D1994BF1F5B60138E50179836D008ECE5E8E6F
+              B40DC0C9F27489525A599DBB52BC293D680D4E17A5B4BB3A753EBEB9F6B3296D
+              5875EA4A7C4BDD2753DAB4EAF493F1AD6902A850BE11513B5D94D28A1EBF10DF
+              66870580A313178BB7DB06E064AD76F9239EE9A294F65427CFC677A4D75AADF2
+              77D828A5DDD5D173C53B530154D0B173F15DB601387AEC7C7CB76D00CEF5CF41
+              D4BEF1775F4AA9EB9127E27BECB0007074F04C7CAF6D008E0E9D89EFB30DC0D1
+              63678AF7DB06E068FFA9F801DB001C1D38153F681B80A383A78B0FD906E0A403
+              123F6C1B80A37D27E2476C0370B4FF44F151DB001CED39193F661B80A3BD27E3
+              C75B21AD41E9A2947655BB8EC54FA409A082761F8F9FB40DC0290FC8A76C0370
+              B4F344FC74AB93D64DE9A29476553B8FC6CFA409A082761D8D9FB50DC0D1A3C7
+              8ACFD906E068FB91F879DB001CED3812BF601B80A31D8FC72FDA06E068FBE1E2
+              4BB60138DA72387ED93600475B0FC7AFD806E068EB91F855DB001CFDEB50FC9A
+              6D004E26B514D34529ADE8E603F1EB76580038DA78307EC33600479B0EC56FDA
+              06E068D3FEE25B318D2C5D94D2EE6AC381F8ED540015B4FE40FC8E6D008ED6EF
+              8BDFB50DC0D1DAFDF17BB601385AB3377EBFE6FFA14569E3AAB57BE30F520154
+              D0EA7DF187B601385ABD27FEC8360047ABF6C49FD806E0686057FCA96D008E56
+              EE8E436C037034B0270EB50DC0D1F25DF1E6BA5FDCA2B469D58A5D71582A800A
+              598C2DA58A52DA5B2DDF196FA97BBBA1B4712DD24949474594D2DE9607A5F6ED
+              86D2A6554B7714B7D6BFDF50DAAC6AC92371789A002A68F1F638A2CE49A2B489
+              CDD2BB901B6F4828A5BD5DB42DFEA6CE49A2B489CDD23FA507A294F6560BB716
+              B7A507B54F14A54DAA166E0FBFADFB644A9BD62C8634D30D8552DA5B2DD816EE
+              A87392286D62357F6BB8334D001532A5AB48B7134A6945E76D2EEECAD2ED24A6
+              DB09A5B4BB9AB7258CAAF35A8CD226362B8AD6F51F2CA494F636BDC40AA36B1C
+              244A9BD9905E66A53724A294F65673378531E9A000A8A0FE8DE14FAD74545A45
+              F98852FABFD59C8D616C9A002A68F6C630CE360047B337843FDB06E068D6FA30
+              DE36004733D785BB6D037034635DB8C7360027CB8A965AE9A294F6B6BC834CB0
+              C302C029BF72527E2CC2C5C55571E981B561621A002AE88135E1FE5ADF6AA4B4
+              89ADFBAD464A9B584D5B5D4C4A070540054D5D1526A793D2AAF9E5464A1B554D
+              5919A6A602A8A0C903619A6D008EA6AC0AD36BBD9BA7B481D5A49561462A800A
+              EA1B08336D037074FF4098651B80A3BE15C583755E8B51DAC4EABE65614E2A80
+              0A9AB822F4DB06E0E8DEE5616EAD8F14296D6075EFB2302F4D001534616978C8
+              3600477F5B1AE6DB06E05CFF7D90C27E0F8152DA5DFD75695868870580A37B96
+              8445B60138BAFBE1F04FDB001C8D5F1C16DB06E068FCC361896D008EFEB2382C
+              ADF38922A54DACC62D0ECBD2045041E3168515350E12A58DACC62E0C03A9002A
+              64B1C8A42C13A5B4B71ABBA8B3CA0E0B004763FED159631B8093296B4945BA28
+              A5BD1D33BFB3AE35281D95902E4A695735664167439A002A68F4FCCEC63A7F0F
+              A6B489CD8AF45A2BA6D75A94D2DE6AF482CEE674500054D0A8878A2DB60138FA
+              E3DF3B5B6D0370346A7E675BED772C9436ACBA6B5E6747CDE752DAB8EA0F733B
+              8FA402A8A03BE7751EB50DC0C9B27448CAEF9C504A7BABDFF7B777DB6101E05C
+              FF24BD88373E39A4947657B7CF6DEFB5C302C0D11DFDED7D75FFE44569E3FABB
+              FEF681540015747B7FFB60BDA34469F3AA91B3DB87D204504123E7B40FD73949
+              9436B1BAEDC1F691BA4FA6B469D5C899F9E36902A8A011D3F3A3B601381A3E33
+              3F6E1B80A35F4FCF4FD47829466923ABE1B3F293A9002A68F8B4FCB46D008E46
+              CCCC9FA87BBBA1B471FDD58CFC4C2A800A1A3E353F6B1B80A39F4FCFCF0F4EF7
+              933CDD4F28A5DDD5AD53F227EDB00070346C527E4183D31B923C3DA0947655BF
+              9C5C5C4ABB95768B52DA5DDD322DBF9C5E6AD5FB9317A50DAB864ECBAFD47E36
+              A50DAB7ED1975F4D1340050D9B9A5FAB7392286D6235ECBEFC69A50745F98052
+              DA55FD6C4AFEEF74560054D0CD93F3FFA48352E76E4369E35A1E90BCEEED86D2
+              C6F5C77D793B1D140015347462DEA97592286D62874CC863AD17639436B01AD2
+              579E1300BD5AADFF0225EA51F51F840F400000000049454E44AE426082}
+            FileName = 'D:\Raoni\Delphi\Master_rastro_SqlServer\dasxjgmy.png'
+          end>
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        WrapMode = Stretch
+        object grp3: TGroupBox
+          Align = Right
+          Position.X = -297.000000000000000000
+          Size.Width = 347.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'STES'
+          TabOrder = 0
+          object img2: TImage
+            MultiResBitmap.Height = 200
+            MultiResBitmap.Width = 200
+            MultiResBitmap = <
+              item
+                Width = 200
+                Height = 200
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000C8000000C80806000000AD58AE
+                  9E000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  074749444154785EEDDD69CC546719C6F1B90E1597A871894BD4B8444DD41863
+                  341AA3C6256A5CA2C6252E31C6256ADC91A28D158CD4DA6A3184084AAB94F665
+                  2D5078918220657BD937D95AF6A550F6B294B55473669EE7F81CB83F38F71C93
+                  F3FDFC7FE4E47F4D325F9F9C9977264C0BC0FFA7A228641B80531E9041B60138
+                  E501B9C93600A73C20CFB00DC0518CF199B60138E51DE459B60138E51DE4D9B6
+                  0138E51DE439B60138E50179AE6D004EF912EB79B60138E50179BE6D008E2E16
+                  C50B6C037074A9285E681B80A34B31BEC8360047972FC717DB06E0E8CA95F812
+                  DB001C5DBD1A5F6A1B80531E9097D906E0E8A9A78A97DB06E0E8DCB5F80ADB00
+                  1C9DBF165F691B80531E9057D906E0E8C2D3C5AB6D0370D20189AFB10DC0D1C5
+                  8BC56B6D0370D20189AFB30DC0D1994BF1F5B60138E50179836D008ECE5E8E6F
+                  B40DC0C9F27489525A599DBB52BC293D680D4E17A5B4BB3A753EBEB9F6B3296D
+                  5875EA4A7C4BDD2753DAB4EAF493F1AD6902A850BE11513B5D94D28A1EBF10DF
+                  66870580A313178BB7DB06E064AD76F9239EE9A294F65427CFC677A4D75AADF2
+                  77D828A5DDD5D173C53B530154D0B173F15DB601387AEC7C7CB76D00CEF5CF41
+                  D4BEF1775F4AA9EB9127E27BECB0007074F04C7CAF6D008E0E9D89EFB30DC0D1
+                  63678AF7DB06E068FFA9F801DB001C1D38153F681B80A383A78B0FD906E0A403
+                  123F6C1B80A37D27E2476C0370B4FF44F151DB001CED39193F661B80A3BD27E3
+                  C75B21AD41E9A2947655BB8EC54FA409A082761F8F9FB40DC0290FC8A76C0370
+                  B4F344FC74AB93D64DE9A29476553B8FC6CFA409A082761D8D9FB50DC0D1A3C7
+                  8ACFD906E068FB91F879DB001CED3812BF601B80A31D8FC72FDA06E068FBE1E2
+                  4BB60138DA72387ED93600475B0FC7AFD806E068EB91F855DB001CFDEB50FC9A
+                  6D004E26B514D34529ADE8E603F1EB76580038DA78307EC33600479B0EC56FDA
+                  06E068D3FEE25B318D2C5D94D2EE6AC381F8ED540015B4FE40FC8E6D008ED6EF
+                  8BDFB50DC0D1DAFDF17BB601385AB3377EBFE6FFA14569E3AAB57BE30F520154
+                  D0EA7DF187B601385ABD27FEC8360047ABF6C49FD806E0686057FCA96D008E56
+                  EE8E436C037034B0270EB50DC0D1F25DF1E6BA5FDCA2B469D58A5D71582A800A
+                  598C2DA58A52DA5B2DDF196FA97BBBA1B4712DD24949474594D2DE9607A5F6ED
+                  86D2A6554B7714B7D6BFDF50DAAC6AC92371789A002A68F1F638A2CE49A2B489
+                  CDD2BB901B6F4828A5BD5DB42DFEA6CE49A2B489CDD23FA507A294F6560BB716
+                  B7A507B54F14A54DAA166E0FBFADFB644A9BD62C8634D30D8552DA5B2DD816EE
+                  A87392286D62357F6BB8334D001532A5AB48B7134A6945E76D2EEECAD2ED24A6
+                  DB09A5B4BB9AB7258CAAF35A8CD226362B8AD6F51F2CA494F636BDC40AA36B1C
+                  244A9BD9905E66A53724A294F65673378531E9A000A8A0FE8DE14FAD74545A45
+                  F98852FABFD59C8D616C9A002A68F6C630CE360047B337843FDB06E068D6FA30
+                  DE36004733D785BB6D037034635DB8C7360027CB8A965AE9A294F6B6BC834CB0
+                  C302C029BF72527E2CC2C5C55571E981B561621A002AE88135E1FE5ADF6AA4B4
+                  89ADFBAD464A9B584D5B5D4C4A070540054D5D1526A793D2AAF9E5464A1B554D
+                  5919A6A602A8A0C903619A6D008EA6AC0AD36BBD9BA7B481D5A49561462A800A
+                  EA1B08336D037074FF4098651B80A3BE15C583755E8B51DAC4EABE65614E2A80
+                  0A9AB822F4DB06E0E8DEE5616EAD8F14296D6075EFB2302F4D001534616978C8
+                  3600477F5B1AE6DB06E05CFF7D90C27E0F8152DA5DFD75695868870580A37B96
+                  8445B60138BAFBE1F04FDB001C8D5F1C16DB06E068FCC361896D008EFEB2382C
+                  ADF38922A54DACC62D0ECBD2045041E3168515350E12A58DACC62E0C03A9002A
+                  64B1C8A42C13A5B4B71ABBA8B3CA0E0B004763FED159631B8093296B4945BA28
+                  A5BD1D33BFB3AE35281D95902E4A695735664167439A002A68F4FCCEC63A7F0F
+                  A6B489CD8AF45A2BA6D75A94D2DE6AF482CEE674500054D0A8878A2DB60138FA
+                  E3DF3B5B6D0370346A7E675BED772C9436ACBA6B5E6747CDE752DAB8EA0F733B
+                  8FA402A8A03BE7751EB50DC0C9B27448CAEF9C504A7BABDFF7B777DB6101E05C
+                  FF24BD88373E39A4947657B7CF6DEFB5C302C0D11DFDED7D75FFE44569E3FABB
+                  FEF681540015747B7FFB60BDA34469F3AA91B3DB87D204504123E7B40FD73949
+                  9436B1BAEDC1F691BA4FA6B469D5C899F9E36902A8A011D3F3A3B601381A3E33
+                  3F6E1B80A35F4FCF4FD47829466923ABE1B3F293A9002A68F8B4FCB46D008E46
+                  CCCC9FA87BBBA1B471FDD58CFC4C2A800A1A3E353F6B1B80A39F4FCFCF0F4EF7
+                  933CDD4F28A5DDD5AD53F227EDB00070346C527E4183D31B923C3DA0947655BF
+                  9C5C5C4ABB95768B52DA5DDD322DBF9C5E6AD5FB9317A50DAB864ECBAFD47E36
+                  A50DAB7ED1975F4D1340050D9B9A5FAB7392286D6235ECBEFC69A50745F98052
+                  DA55FD6C4AFEEF74560054D0CD93F3FFA48352E76E4369E35A1E90BCEEED86D2
+                  C6F5C77D793B1D140015347462DEA97592286D62874CC863AD17639436B01AD2
+                  579E1300BD5AADFF0225EA51F51F840F400000000049454E44AE426082}
+                FileName = 'D:\Raoni\Delphi\Master_rastro_SqlServer\dasxjgmy.png'
+              end>
+            Align = Client
+            Opacity = 0.899999976158142100
+            Size.Width = 347.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            WrapMode = Stretch
+            object grp4: TGroupBox
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 15.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 15.000000000000000000
+              Size.Width = 337.000000000000000000
+              Size.Height = 74.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'STES 1'
+              TabOrder = 0
+              object lbl3: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 37.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'IP do STES'
+              end
+              object stes1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 13.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 156.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = stes1MouseEnter
+                OnMouseLeave = lv1MouseLeave
+              end
+              object chk1: TCheckBox
+                Position.X = 16.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 57.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnChange = chk1Change
+              end
+              object UnStes1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                MaxLength = 8
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 184.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 137.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = UnStes1MouseEnter
+                OnMouseLeave = lv1MouseLeave
+              end
+              object lbl12: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 189.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 124.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'C'#243'digo da unidade'
+              end
+            end
+            object grp5: TGroupBox
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 94.000000000000000000
+              Size.Width = 337.000000000000000000
+              Size.Height = 82.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'STES 2'
+              TabOrder = 1
+              object lbl4: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 37.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'IP do STES'
+              end
+              object Stes2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 13.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 156.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = Stes2MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object chk2: TCheckBox
+                Position.X = 16.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 57.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnChange = chk2Change
+              end
+              object UnStes2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                MaxLength = 8
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 184.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 137.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = UnStes2MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object lbl5: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 189.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 124.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'C'#243'digo da unidade'
+              end
+            end
+            object grp6: TGroupBox
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 268.000000000000000000
+              Size.Width = 337.000000000000000000
+              Size.Height = 82.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'STES 4'
+              TabOrder = 2
+              object lbl6: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 37.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'IP do STES'
+              end
+              object Stes4: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 13.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 156.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = Stes4MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object chk4: TCheckBox
+                Position.X = 16.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 57.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnChange = chk4Change
+              end
+              object UnStes4: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                MaxLength = 8
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 184.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 137.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = UnStes4MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object lbl7: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 189.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 124.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'C'#243'digo da unidade'
+              end
+            end
+            object grp7: TGroupBox
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 181.000000000000000000
+              Size.Width = 337.000000000000000000
+              Size.Height = 82.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'STES 3'
+              TabOrder = 3
+              object lbl13: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 37.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'IP do STES'
+              end
+              object Stes3: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 13.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 156.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = Stes3MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object chk3: TCheckBox
+                Position.X = 16.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 57.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnChange = chk3Change
+              end
+              object UnStes3: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                MaxLength = 8
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 184.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 137.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = UnStes3MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object lbl14: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 189.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 124.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'C'#243'digo da unidade'
+              end
+            end
+            object grp8: TGroupBox
+              Align = Top
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 5.000000000000000000
+              Position.Y = 355.000000000000000000
+              Size.Width = 337.000000000000000000
+              Size.Height = 82.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'STES 5'
+              TabOrder = 4
+              object lbl15: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 37.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'IP do STES'
+              end
+              object Stes5: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 13.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 156.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = Stes5MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object chk5: TCheckBox
+                Position.X = 16.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 57.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnChange = chk5Change
+              end
+              object UnStes5: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                MaxLength = 8
+                TextSettings.Font.Size = 20.000000000000000000
+                TextSettings.HorzAlign = Center
+                Position.X = 184.000000000000000000
+                Position.Y = 40.000000000000000000
+                Enabled = False
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Size.Width = 137.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, FontColor]
+                OnKeyDown = stes1KeyDown
+                OnMouseEnter = UnStes5MouseEnter
+                OnMouseLeave = lv2MouseLeave
+              end
+              object lbl16: TLabel
+                Margins.Left = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 8.000000000000000000
+                Position.X = 189.000000000000000000
+                Position.Y = 19.000000000000000000
+                Size.Width = 124.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.HorzAlign = Center
+                Text = 'C'#243'digo da unidade'
+              end
+            end
+          end
+        end
+        object grp2: TGroupBox
+          Align = Left
+          Size.Width = 369.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Pdata'#39's'
+          TabOrder = 1
+          object lv1: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 20.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 20.000000000000000000
+            Size.Width = 180.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnMouseEnter = lv1MouseEnter
+            OnMouseLeave = lv1MouseLeave
+            OnDblClick = lv1DblClick
+          end
+          object lv2: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Right
+            Margins.Top = 20.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 184.000000000000000000
+            Position.Y = 20.000000000000000000
+            Size.Width = 180.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnMouseEnter = lv2MouseEnter
+            OnMouseLeave = lv2MouseLeave
+            OnDblClick = lv2DblClick
+          end
+        end
+      end
+    end
+  end
+  object btn3: TButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 186.000000000000000000
+    Position.Y = 1.000000000000000000
+    Size.Width = 539.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Salvar configura'#231#245'es'
+    TextSettings.Font.Family = 'Bookman Old Style'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = btn3Click
+  end
+  object p1: TPopup
+    Placement = BottomCenter
+    Position.X = 464.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object cltpnl1: TCalloutPanel
+      Align = Client
+      Padding.Top = 11.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      CalloutWidth = 23.000000000000000000
+      CalloutLength = 11.000000000000000000
+      object lbl: TLabel
+        Align = Client
+        Size.Width = 169.000000000000000000
+        Size.Height = 62.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 
+          'Inserir o caminho completo para o servidor HTML.'#13#10'Ex: \\10.128.1' +
+          '28.178\pendencias\'#13#10'Importante: O usu'#225'rio deve ter acesso '#224' past' +
+          'a!'
+      end
+    end
+  end
+end

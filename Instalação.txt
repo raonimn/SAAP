@@ -1,0 +1,4 @@
+Instalar o SQL Server express, com instancia padrão, configurando a senha SA para !.Correios.
+Criar o usuário Alerta, com senha !.Correios e que a senha nunca expire e nem utilize diretrizes e com todos os
+privilégios
+Criar o banco de dados Alerta_db com usuário proprietário o Alerta.
