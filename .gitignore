@@ -3,3 +3,6 @@
 *.exe
 exe
 dcu
+Release
+.local
+.identcache
