@@ -1,8 +1,9 @@
 *.~*
 *.dcu
 dcu
-.local
+*.local
 Debug
+Release
 conf.ini
 dados
 .identcache

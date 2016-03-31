@@ -115,6 +115,8 @@ type
     procedure edt6MouseEnter(Sender: TObject);
     procedure edt7Exit(Sender: TObject);
     procedure edt6MouseLeave(Sender: TObject);
+    procedure spnbx1MouseEnter(Sender: TObject);
+    procedure spnbx1MouseLeave(Sender: TObject);
   private
     procedure adicionalv(lview: tlistview; conteudo: string);
     procedure adicionaitems;
@@ -682,6 +684,20 @@ begin
   end
   else if chkxls.IsChecked = true then
     chkmail.Enabled := True;
+end;
+
+procedure TForm2.spnbx1MouseEnter(Sender: TObject);
+begin
+  p1.PlacementTarget := spnbx1;
+  lbl.Text := 'Escolha a quantidade de dias anteriores em que o sistema buscará os insumos';
+  p1.IsOpen := True;
+end;
+
+procedure TForm2.spnbx1MouseLeave(Sender: TObject);
+begin
+  p1.IsOpen := False;
+  cltpnl1.CalloutPosition := TCalloutPosition(0);
+  p1.Placement := TPlacement(5);
 end;
 
 procedure TForm2.adicionalv(lview: tlistview; conteudo: string);

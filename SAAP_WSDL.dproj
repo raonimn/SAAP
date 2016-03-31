@@ -213,14 +213,14 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <AppEnableHighDPI>true</AppEnableHighDPI>
-        <VerInfo_Keys>CompanyName=GPLAQ / CTE Recife;FileDescription=SAAP;FileVersion=0.6.3.0;InternalName=SAAP;LegalCopyright=Raoni Miranda;LegalTrademarks=Raoni Miranda;OriginalFilename=SAAP;ProductName=Sistema de Acompanhamento e Alerta de Pendências;ProductVersion=0.6.3.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=GPLAQ / CTE Recife;FileDescription=SAAP;FileVersion=0.6.7.0;InternalName=SAAP;LegalCopyright=Raoni Miranda;LegalTrademarks=Raoni Miranda;OriginalFilename=SAAP;ProductName=Sistema de Acompanhamento e Alerta de Pendências;ProductVersion=0.6.7.0;Comments=</VerInfo_Keys>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <VerInfo_Release>3</VerInfo_Release>
-        <Icon_MainIcon>SAAP_Icon3.ico</Icon_MainIcon>
+        <VerInfo_Release>7</VerInfo_Release>
+        <Icon_MainIcon>SAAP_WSDL_Icon.ico</Icon_MainIcon>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_MinorVer>6</VerInfo_MinorVer>
         <VerInfo_Locale>1046</VerInfo_Locale>
-        <Icns_MainIcns>SAAP_Icns3.icns</Icns_MainIcns>
+        <Icns_MainIcns>SAAP_WSDL_Icns.icns</Icns_MainIcns>
         <VerInfo_MajorVer>0</VerInfo_MajorVer>
     </PropertyGroup>
     <ItemGroup>
@@ -281,7 +281,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Alerta.todo" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="Win32\Debug\SAAP_WSDL.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule"/>
                 <DeployFile LocalName="Win32\Release\SAAP_WSDL.exe" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win32">
@@ -295,40 +295,24 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\iossim32\libcgunwind.1.0.dylib" Class="DependencyModule"/>
-                <DeployFile LocalName="Win32\Debug\SAAP_WSDL.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Alerta.todo" Configuration="Debug" Class="ProjectFile"/>
                 <DeployFile LocalName="SAAP_WSDL.todo" Configuration="Release" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployClass Name="DependencyModule">
-                    <Platform Name="Win32">
-                        <Operation>0</Operation>
-                        <Extensions>.dll;.bpl</Extensions>
-                    </Platform>
+                <DeployFile LocalName="Alerta.todo" Configuration="Debug" Class="ProjectFile"/>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
                     <Platform Name="iOSDevice64">
                         <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
-                    <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="iOSDevice32">
                         <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
                     </Platform>
                 </DeployClass>
                 <DeployClass Name="ProjectOSXResource">
@@ -682,12 +666,27 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
                     <Platform Name="iOSDevice64">
                         <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="iOSDevice32">
                         <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
                     </Platform>
                 </DeployClass>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
