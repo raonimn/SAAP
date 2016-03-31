@@ -1563,7 +1563,7 @@ begin
     caminho := ExtractFilePath(ParamStr(0));
 
     try
-      idsmtp1.Username := 'correiosnet\peextraviozero';
+      //idsmtp1.Username := 'correiosnet\peextraviozero';
       idsmtp1.Password := 'Pp123456';
       if not idsmtp1.Connected then
       try
