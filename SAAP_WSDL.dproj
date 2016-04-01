@@ -5,7 +5,7 @@
         <FrameworkType>FMX</FrameworkType>
         <MainSource>SAAP_WSDL.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>31</TargetedPlatforms>
         <AppType>Application</AppType>
@@ -192,12 +192,13 @@
         <BT_BuildType>Debug</BT_BuildType>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
-        <VerInfo_MinorVer>3</VerInfo_MinorVer>
-        <VerInfo_Release>7</VerInfo_Release>
+        <AppEnableHighDPI>true</AppEnableHighDPI>
+        <VerInfo_MinorVer>4</VerInfo_MinorVer>
+        <VerInfo_Release>1</VerInfo_Release>
         <VerInfo_MajorVer>0</VerInfo_MajorVer>
-        <Icns_MainIcns>Alerta_Icns.icns</Icns_MainIcns>
+        <Icns_MainIcns>SAAP_WSDL_Icns.icns</Icns_MainIcns>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <Icon_MainIcon>Alerta_Icon.ico</Icon_MainIcon>
+        <Icon_MainIcon>SAAP_WSDL_Icon.ico</Icon_MainIcon>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>

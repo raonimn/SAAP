@@ -369,7 +369,7 @@ begin
   htpr1.HTTPWebNode.ConnectTimeout := 1000 * 180;
   htpr1.HTTPWebNode.SendTimeout := 1000 * 400;
   htpr1.HTTPWebNode.ReceiveTimeout := 1000 * 400;
-  htpr1.HTTPWebNode.Proxy := 'proxyac.correiosnet.int';
+   htpr1.HTTPWebNode.Proxy := 'proxyac.correiosnet.int';
   try
     ser := GetService(true, '', htpr1);
 
