@@ -279,35 +279,35 @@ begin
       unisql.SQL.Add('p.[objeto] as Objeto from [alerta_db].[dbo].[Acompanhamento] as p where ((destino = ' + QuotedStr(diretoria) + ') AND (data < ' + QuotedStr(FormatDateTime('yyyy-mm-dd', Now)) + ')) order by Unidade_Responsável ASC, DATA ASC, Unidade_Origem ASC;');
       unisql.Open;
       unisql.First;
-      //If unisql.count <> 0 then
-      //begin
-      if conf_html then
+      if unisql.RecordCount <> 0 then
       begin
- //       escreveLog('Tentando gerar relatório HTML da unidade: ' + diretoria);
-        xphtml.DataSet := unisql;
-        xphtml.FileName := pasta_exec + 'relatorios\' + diretoria + '.html';
-        xphtml.Title := 'Pendencias na unidade: ' + diretoria;
-        xphtml.CSSFileName := pasta_exec + 'relatorios\css.css';
-        xphtml.Execute;
-        transfereHTML(xphtml.FileName, diretoria + '.html');
-      end;
-      if conf_xls then
-      begin
-//        escreveLog('Tentando gerar relatório XLSX da unidade: ' + diretoria);
-        xpxslx.DataSet := unisql;
-        xpxslx.SheetName := diretoria;
-        xpxslx.FileName := pasta_exec + 'relatorios\' + diretoria + '.xlsx';
-        xpxslx.Execute;
-        transfereHTML(xpxslx.FileName, 'Excel\' + diretoria + '.xlsx');
-      end;
-      if conf_mail then
-      begin
-        if (fileexists(pasta_exec + '\relatorios\' + diretoria + '.xlsx')) then
+        if conf_html then
         begin
-          enviamail(diretoria, unidadeEmail(diretoria));
+ //       escreveLog('Tentando gerar relatório HTML da unidade: ' + diretoria);
+          xphtml.DataSet := unisql;
+          xphtml.FileName := pasta_exec + 'relatorios\' + diretoria + '.html';
+          xphtml.Title := 'Pendencias na unidade: ' + diretoria;
+          xphtml.CSSFileName := pasta_exec + 'relatorios\css.css';
+          xphtml.Execute;
+          transfereHTML(xphtml.FileName, diretoria + '.html');
+        end;
+        if conf_xls then
+        begin
+//        escreveLog('Tentando gerar relatório XLSX da unidade: ' + diretoria);
+          xpxslx.DataSet := unisql;
+          xpxslx.SheetName := diretoria;
+          xpxslx.FileName := pasta_exec + 'relatorios\' + diretoria + '.xlsx';
+          xpxslx.Execute;
+          transfereHTML(xpxslx.FileName, 'Excel\' + diretoria + '.xlsx');
+        end;
+        if conf_mail then
+        begin
+          if (fileexists(pasta_exec + '\relatorios\' + diretoria + '.xlsx')) then
+          begin
+            enviamail(diretoria, unidadeEmail(diretoria));
+          end;
         end;
       end;
-      //end;
     finally
       unisql.SQL.Clear;
       unisql.Close;
@@ -763,8 +763,8 @@ begin
           batch.Add('cd "' + pasta_exec + 'dados\"');
           batch.Add('type "' + Pdata_baixado[I] + '" | find "OK" >> "' + pasta_exec + 'dados\' + Pdata_baixado[I] + '.txt"');
           batch.Add('echo "OK" >> "' + pasta_exec + 'dados\continua.ok"');
-          batch.SaveToFile(pasta_exec + '\dados\executa'+inttostr(I)+'.bat');
-          ShellExecute(0, 'open', PChar(pasta_exec + '\dados\executa'+inttostr(I)+'.bat'), nil, nil, 0);
+          batch.SaveToFile(pasta_exec + '\dados\executa' + inttostr(I) + '.bat');
+          ShellExecute(0, 'open', PChar(pasta_exec + '\dados\executa' + inttostr(I) + '.bat'), nil, nil, 0);
           pdatafile := pasta_exec + 'dados\' + Pdata_baixado[I] + '.txt';
           continua_ := false;
           tmr2.Enabled := True;
@@ -1066,7 +1066,7 @@ end;
 
 procedure TForm1.btn4Click(Sender: TObject);
 begin
- TelaAguardar;
+  TelaAguardar;
   try
     btn4.enabled := false;
     form1.visible := False;
@@ -1206,14 +1206,14 @@ end;
 
 procedure TForm1.TelaAguardar;
 begin
-    if not assigned(Form5) then
-      Application.CreateForm(TForm5, Form5);
-    Form5.Show;
+  if not assigned(Form5) then
+    Application.CreateForm(TForm5, Form5);
+  Form5.Show;
 end;
 
 procedure TForm1.btn5Click(Sender: TObject);
 begin
-telaaguardar;
+  telaaguardar;
 end;
 
 procedure TForm1.MudaStatus(labl, texto: string);
@@ -1517,7 +1517,7 @@ begin
     begin
       if temp_quantidade = false then
       begin
-         TelaAguardar;
+        TelaAguardar;
         try
           btn4.enabled := false;
           form1.visible := False;
@@ -1572,7 +1572,7 @@ begin
       try
         idsmtp1.Connect;
         if not idsmtp1.Authenticate then
-          escreveLog('Não conseguiu autenticação! Unidade '+unidade);
+          escreveLog('Não conseguiu autenticação! Unidade ' + unidade);
       except
         on E: Exception do
           escreveLog('Erro ao tentar conectar/autenticar: ' + E.Message);
@@ -1611,7 +1611,7 @@ begin
 
       except
         on E: Exception do
-          escreveLog('Erro ao enviar a mensagem da unidade '+unidade+': ' + E.Message);
+          escreveLog('Erro ao enviar a mensagem da unidade ' + unidade + ': ' + E.Message);
       end;
 
     finally
