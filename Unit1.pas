@@ -279,6 +279,8 @@ begin
       unisql.SQL.Add('p.[objeto] as Objeto from [alerta_db].[dbo].[Acompanhamento] as p where ((destino = ' + QuotedStr(diretoria) + ') AND (data < ' + QuotedStr(FormatDateTime('yyyy-mm-dd', Now)) + ')) order by Unidade_Responsável ASC, DATA ASC, Unidade_Origem ASC;');
       unisql.Open;
       unisql.First;
+      //If unisql.count <> 0 then
+      //begin
       if conf_html then
       begin
  //       escreveLog('Tentando gerar relatório HTML da unidade: ' + diretoria);
@@ -305,6 +307,7 @@ begin
           enviamail(diretoria, unidadeEmail(diretoria));
         end;
       end;
+      //end;
     finally
       unisql.SQL.Clear;
       unisql.Close;
@@ -1569,7 +1572,7 @@ begin
       try
         idsmtp1.Connect;
         if not idsmtp1.Authenticate then
-          escreveLog('Não conseguiu autenticação!');
+          escreveLog('Não conseguiu autenticação! Unidade '+unidade);
       except
         on E: Exception do
           escreveLog('Erro ao tentar conectar/autenticar: ' + E.Message);
@@ -1608,7 +1611,7 @@ begin
 
       except
         on E: Exception do
-          escreveLog('Erro ao enviar a mensagem: ' + E.Message);
+          escreveLog('Erro ao enviar a mensagem da unidade '+unidade+': ' + E.Message);
       end;
 
     finally
