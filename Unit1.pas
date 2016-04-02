@@ -1586,7 +1586,7 @@ begin
 
       idmsg1.From.Address := 'peextraviozero@correios.com.br';
       // dm.idmsg1.From.Address := 'peextraviozero@correios.com.br';
-      idmsg1.From.Name := 'Raoni Miranda Neves';
+      idmsg1.From.Name := 'EXTRAVIO ZERO - DR/PE';
       idmsg1.Recipients.EMailAddresses := unidade_mail;
          // dm.idmsg1.Recipients.EMailAddresses := u_mail[k] + ';' + u_mail2[k];
       idmsg1.subject := 'Acompanhamento e Alerta de Pendências - SAAP';
